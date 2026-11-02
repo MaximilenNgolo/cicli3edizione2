@@ -1,12 +1,28 @@
  let num = Number(prompt(`inserisci il tuo numero per ottenere la tabellina `))
 
+ let accoumulator = 0;
+ let counter = 0;
 
 
- for (let i = 1 ; i <= 10; i++) {
-    console.log(i * num);
+
+ for (let i = 1 ; i <= num; i++) {
+    if (i % 2 == 0) {
+        console.log(i);
+        
+        
+    } else{
+        accoumulator = accoumulator + i;
+        counter ++
+    }
     
     
  }
+
+
+ console.log(`accoumulator = ${accoumulator}`);
+  console.log(`counter = ${counter}`);
+   console.log(`risultato = ${accoumulator / counter} `);
+ 
 
 
 /* 
