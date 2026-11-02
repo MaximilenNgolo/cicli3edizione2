@@ -1,4 +1,63 @@
- let num = Number(prompt(`inserisci il tuo numero per ottenere la tabellina `))
+let scelta;
+
+
+do{
+    scelta = Number( prompt(`inserisci il numero corrispondente alla bevanda desiderata: 1 - acqua, 2 - coca cola , 3 - aranciata`));
+
+    switch (scelta) {
+        case 1:
+            console.log(`è stata selezionata l'acqua`);
+            break;
+
+        case 2:
+            console.log(`è stata selezionata coca cola`);
+            break; 
+            
+            
+        case 3:
+            console.log(`è stata selezionata l'aranciata`);
+            break;    
+    
+        default:
+            console.log(`la scelta inserita non è valida, riprova`);
+            
+            break;
+    }
+}while (scelta < 1 || scelta > 3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  let num = Number(prompt(`inserisci il tuo numero per ottenere la tabellina `))
 
  let accoumulator = 0;
  let counter = 0;
@@ -21,7 +80,7 @@
 
  console.log(`accoumulator = ${accoumulator}`);
   console.log(`counter = ${counter}`);
-   console.log(`risultato = ${accoumulator / counter} `);
+   console.log(`risultato = ${accoumulator / counter} `); */
  
 
 
